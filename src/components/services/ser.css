@@ -1,0 +1,33 @@
+.card-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-products .card {
+    margin: 50px 10px;
+    background-color: rgb(250, 250, 250);
+}
+.card-products .card .card-img-top {
+    padding: 25px 10px;
+}
+
+.card-products .card .card-body a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-products .card .card-body a:hover {
+    color: yellow;
+}
+
+.card-products .card .card-body .card-title {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+
+.card-products .card .card-body .card-btn {
+    display: flex;
+    justify-content: center;
+}

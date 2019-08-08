@@ -1,0 +1,143 @@
+.about-area {
+    margin: 100px 0;
+}
+
+.about-area img {
+    padding: 25px 10px;
+}
+
+.area-order {
+    display: block;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.area-order a:hover {
+    text-decoration: none;
+}
+
+.area-order .buy-now {
+    display: block;
+    overflow: hidden;
+    padding: 7px 0;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: #fd6e1d;
+    background: -webkit-gradient(linear,0% 0%,0% 100%,from(#fd6e1d),to(#f59000));
+    background: -webkit-linear-gradient(top,#f59000,#fd6e1d);
+    background: -moz-linear-gradient(top,#f59000,#fd6e1d);
+    background: -ms-linear-gradient(top,#f59000,#fd6e1d);
+    background: -o-linear-gradient(top,#f59000,#fd6e1d);
+}
+
+.area-order span {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    text-transform: none;
+    padding-top: 3px;
+}
+
+.area-order .order-now {
+    display: flex;
+    justify-content: space-between;
+}
+
+.area-order .buy-repay {
+    line-height: normal;
+    display: block;
+    padding: 7px 0;
+    text-align: center;
+    margin: 10px 0 0;
+    background: #288ad6;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 48.5%;
+}
+
+.area-order .buy-now:hover {
+    background-color: #ff843d;
+}
+
+.area-order .buy-repay:hover {
+    background-color: #488fc5;
+}
+
+.tableparameter {
+    display: block;
+    overflow: visible;
+}
+
+.tableparameter h2 {
+    display: block;
+    line-height: 1.3em;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.parameter {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+.parameter li {
+    display: table;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding: 5px 0;
+}
+
+.parameter li span {
+    display: table-cell;
+    width: 40%;
+    vertical-align: top;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.parameter li div {
+    display: table-cell;
+    width: auto;
+    vertical-align: top;
+    padding: 6px 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.parameter li div a {
+    color: #288ad6;
+}
+
+.viewparameterfull {
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+    margin: 10px 0 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    color: #288ad6;
+    background: #fff;
+    border: 1px solid #288ad6;
+    border-radius: 4px;
+}
+
+.viewparameterfull:hover {
+    background-color: #288ad6;
+    color: white;
+}
