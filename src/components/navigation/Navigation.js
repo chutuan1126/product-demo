@@ -35,20 +35,18 @@ class Navigation extends Component {
     Contact() {
         return <Contact />;
     }
-    Child({ match }) {
-        return (
-            <div>
-                <h3>ID: {match.params.id}</h3>
-            </div>
-        );
-    }
 
     Product({ match }) {
         let keyCode = match.params.id.split('-');
         let len = keyCode.length;
         keyCode = keyCode[len - 1].split('.')[0];
         const product = db.product.find((product) => { return product.id === keyCode });
-        return <Product product={product} />;
+        if (product) {
+            return <Product product={product} />;
+        }
+       else {
+           return <h3>Not thing here !</h3>
+       }
     }
 
     render() {
@@ -83,7 +81,6 @@ class Navigation extends Component {
                 <Route path='/portfolio/' component={this.Portfolio} />
                 <Route path='/blog/' component={this.Blog} />
                 <Route path='/contact/' component={this.Contact} />
-                <Route exact path="/:id/" component={this.Child} />
                 <Route exact path='/services/:id/' component={this.Product} />
             </div>
         );

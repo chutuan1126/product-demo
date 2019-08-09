@@ -7,11 +7,11 @@ class Services extends Component {
     render() {
         if (db.product.length) {
             return (
-                <div className='card-products'>
+                <div className='container card-products'>
                     {
                         db.product.map((product, key) => {
                             return (
-                                <div className="card" key={key} style={{ width: '18rem' }}>
+                                <div className="card" key={key} style={{ width: '16rem' }}>
                                     <Link to={`/services/${product.proName.split(' ').join('-')}-${product.id}.html`}>
                                         <img src={product.avatar} className="card-img-top" alt={product.proName} />
                                     </Link>

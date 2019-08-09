@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './pro.css';
+import './product.css';
 
 class Product extends Component {
     render() {
@@ -83,10 +83,13 @@ class Product extends Component {
                                     </li>
                                 </ul>
                                 <button type="button" className="viewparameterfull">Xem cấu hình chi tiết</button>
-
                             </div>
+                                <div className='info-product'>
+                                    <p>{product.proContent}</p>
+                                </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         );

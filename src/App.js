@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navigation from './components/navigation/Navigation';
 
-export default function App() {
-  return (
-    <Router>
-      <Navigation />
-    </Router>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Navigation />
+      </Router>
+    );
+  }
 }
+
+export default App;

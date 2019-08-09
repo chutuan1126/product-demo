@@ -49,7 +49,7 @@ class Home extends Component {
                                 <h4 className="sub-title">Hello, I’m</h4>
                                 <h1 className="title">Ron.J.Evans</h1>
                                 <p>A Freelance Web Developer Full-Stack</p>
-                                <a className="main-btn" href="/portfolio/">View my Work</a>
+                                <button className="main-btn" href="/portfolio/" >View my Work</button>
                             </div>
                         </div>
                         <div className="col-lg-6 offset-xl-1">
