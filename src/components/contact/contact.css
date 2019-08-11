@@ -63,7 +63,7 @@ body, p {
     padding: 0 10px;
 }
 
-.form-control-input, .form-control-select {
+.form-control-input {
     display: block;
     width: 100%;
     padding-top: 1.0625rem;

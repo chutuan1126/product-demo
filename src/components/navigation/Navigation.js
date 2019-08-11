@@ -9,8 +9,6 @@ import Blog from '../blog/Blog';
 import Contact from '../contact/Contact';
 import Product from '../product/Product';
 
-import db from '../../util/products.json';
-
 class Navigation extends Component {
     Index() {
         return <Home />;
@@ -40,13 +38,8 @@ class Navigation extends Component {
         let keyCode = match.params.id.split('-');
         let len = keyCode.length;
         keyCode = keyCode[len - 1].split('.')[0];
-        const product = db.product.find((product) => { return product.id === keyCode });
-        if (product) {
-            return <Product product={product} />;
-        }
-       else {
-           return <h3>Not thing here !</h3>
-       }
+
+        return <Product keyCode={keyCode} />;
     }
 
     render() {

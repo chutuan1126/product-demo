@@ -1,0 +1,123 @@
+.register {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-image: url('https://phongvu.vn/cong-nghe/wp-content/uploads/2018/07/hinh-nen-laptop.jpeg'),
+    linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-register {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #447ef1d3;
+}
+
+.form-register .form-group {
+    margin: 0 auto;
+	width: 300px;
+}
+
+.form-group input {
+	height: 48px;
+}
+
+.form-group.email input[type="email"] {
+    background-color: #fff;
+    border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-radius: 10px 10px 0 0;
+	color: #363636;
+	padding-left: 36px;
+	width: 300px;
+}
+
+.form-group input[type="password"] {
+	background-color: #fff;
+	border-top: 1px solid rgb(175, 175, 175);
+	border-right: 1px solid #000;
+	border-bottom: 1px solid rgb(175, 175, 175);
+	border-left: 1px solid #000;
+	border-radius: 0;
+	color: #363636;
+	padding-left: 36px;
+	width: 300px;
+}
+
+.form-group input[type="password"].bottom_from {
+    border-radius: 0 0 10px 10px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
+}
+
+.form-group.submit button[type="submit"] {
+	background-color: #f9d114;
+	border: 1px solid pink;
+	border-radius: 15px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 300px;
+}
+
+.form-group input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.form-check {
+    margin-bottom: 10px !important;
+    font: 400 0.75rem/1.25rem "Open Sans", sans-serif;
+}
+
+.info-disigner {
+    margin-top: 25px !important;
+}
+
+.forgot-password {
+text-align: right;
+padding-right: 20px;
+padding-top: 10px;
+}
+
+.forgot-password a {
+    color:yellow;
+    text-shadow: 1px 2px 1px  rgba(0,0,0,.5);
+}
+
+.texto {
+    color: yellow; 
+    font-size: 40px; 
+    margin: 6% auto 12% auto;
+    text-align: center;
+    font-family: 'Titan One';   
+    text-shadow: 1px 2px 1px  rgba(0,0,0,.5);
+    padding-top: 40px;
+  }
+
+.texto_true {
+    margin: 4% auto 8% auto !important;
+}
+
+  .texto-or {
+    color: black; 
+    font-size: 35px; 
+    margin: 2% auto;
+    text-align: center;
+    font-family: 'Titan One';   
+    text-shadow: 1px 2px 1px  rgba(0,0,0,.5);
+    padding-top: 40px;
+  }
+  
+  p:hover,
+  .forgot-password a:hover {
+    text-shadow: 2px 2px 20px  pink, #fff 0 -1px 2px;
+  }

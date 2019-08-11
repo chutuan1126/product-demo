@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './index.css';
-import shape1 from '../../shape/shape-1.png';
-import shape2 from '../../shape/shape-2.png';
-import shape3 from '../../shape/shape-3.png';
-import shape4 from '../../shape/shape-4.png';
-import shape5 from '../../shape/shape-5.png';
-import shape6 from '../../shape/shape-6.png';
-import DinhNhi from '../../shape/trieu-le-dinh.jpg';
+import shape1 from './shape/shape-1.png';
+import shape2 from './shape/shape-2.png';
+import shape3 from './shape/shape-3.png';
+import shape4 from './shape/shape-4.png';
+import shape5 from './shape/shape-5.png';
+import shape6 from './shape/shape-6.png';
+import DinhNhi from './shape/trieu-le-dinh.jpg';
 
 class Home extends Component {
     render() {

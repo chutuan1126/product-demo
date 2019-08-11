@@ -127,7 +127,6 @@ class Contact extends Component {
                                 <div className="form-group">
                                     <button
                                         type="submit"
-                                        // onClick={(event) => this.handleSubmit(event)}
                                         className="form-control-submit-button disabled"
                                     >SUBMIT MESSAGE</button>
                                 </div>

@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import db from '../../util/products.json';
-import './ser.css';
+import { connect } from 'react-redux';
+import './services.css';
 
 class Services extends Component {
     render() {
-        if (db.product.length) {
+        if (this.props.products.length) {
             return (
                 <div className='container card-products'>
                     {
-                        db.product.map((product, key) => {
+                        this.props.products.map((product, key) => {
                             return (
                                 <div className="card" key={key} style={{ width: '16rem' }}>
-                                    <Link to={`/services/${product.proName.split(' ').join('-')}-${product.id}.html`}>
+                                    <Link to={`/services/${product.proName.split(' ').join('-')}-${product._id}.html`}>
                                         <img src={product.avatar} className="card-img-top" alt={product.proName} />
                                     </Link>
                                     <div className="card-body">
-                                        <Link to={`/services/${product.proName.split(' ').join('-')}-${product.id}.html`}>
+                                        <Link to={`/services/${product.proName.split(' ').join('-')}-${product._id}.html`}>
                                             <h5 className="card-title">{product.proName}</h5>
                                         </Link>
                                         <h5 className="card-title">{product.proPrice}</h5>
@@ -42,4 +42,10 @@ class Services extends Component {
     }
 }
 
-export default Services;
+const mapStateToProps = (state, ownProps) => {
+    return {
+      products: state.product
+    }
+  }
+  
+  export default connect(mapStateToProps)(Services);

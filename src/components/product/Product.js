@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './product.css';
 
 class Product extends Component {
     render() {
-        const { product } = this.props;
+        const { keyCode } = this.props;
+        const product = this.props.products.find((product) => { return product._id === keyCode });
         return (
             <section className="about-area">
                 <div className="container">
@@ -96,4 +98,10 @@ class Product extends Component {
     }
 }
 
-export default Product;
+const mapStateToProps = (state, ownProps) => {
+    return {
+      products: state.product
+    }
+  }
+  
+  export default connect(mapStateToProps)(Product);
